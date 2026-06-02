@@ -6,6 +6,7 @@
 - 권장 배포: Vercel
 - Backend: Supabase
 - Domain: Cloudflare 또는 기존 도메인 연결
+- 현재 Vercel 배포 URL: https://chungharam-hp.vercel.app
 
 ## 2. Vercel 환경변수
 
