@@ -27,7 +27,7 @@ export default function ImageUploader({ name = "main_image_url" }: { name?: stri
     <div className="grid gap-2">
       <label className="font-bold">이미지 업로드</label>
       <input type="hidden" name={name} value={url} />
-      <label className="flex min-h-28 cursor-pointer flex-col items-center justify-center gap-2 rounded-lg border border-dashed border-[#2D8C8C] bg-[#F8FAFB] p-4 text-center font-bold text-[#2D8C8C]">
+      <label className="flex min-h-28 cursor-pointer flex-col items-center justify-center gap-2 rounded-[20px] border border-dashed border-[#2D8C8C]/60 bg-[#F8FAFB] p-4 text-center font-bold text-[#2D8C8C] transition hover:bg-[#EAF7F5]">
         <Upload size={22} aria-hidden />
         이미지 선택
         <input
@@ -40,7 +40,7 @@ export default function ImageUploader({ name = "main_image_url" }: { name?: stri
           }}
         />
       </label>
-      {url ? <input className="min-h-11 rounded-lg border border-[#E5E7EB] px-3" value={url} readOnly /> : null}
+      {url ? <input className="min-h-11 rounded-[16px] border-0 bg-[#F8FAFB] px-3 ring-1 ring-[#DDE7E7]/75" value={url} readOnly /> : null}
       {message ? <p className="text-sm font-bold text-[#6B7280]">{message}</p> : null}
     </div>
   );

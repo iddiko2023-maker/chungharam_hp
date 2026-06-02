@@ -21,7 +21,7 @@ export default async function AdminInquiriesPage() {
       <AdminHeader title="문의 관리" description="구매, 기관 납품, 후원, 제휴 문의를 확인합니다." />
       <div className="grid gap-3">
         {rows.map((row) => (
-          <article key={row.id} className="rounded-lg border border-[#E5E7EB] bg-white p-5 shadow-sm">
+          <article key={row.id} className="rounded-[22px] bg-white/84 p-5 ring-1 ring-[#DDE7E7]/65">
             <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
               <div>
                 <p className="text-xl font-black">

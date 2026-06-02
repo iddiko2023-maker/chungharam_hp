@@ -21,7 +21,7 @@ export default async function ContactPage() {
       <Container className="py-12 md:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
           <aside className="grid gap-4">
-            <div className="rounded-lg bg-[#155F70] p-7 text-white shadow-lg">
+            <div className="rounded-[30px] bg-[#155F70] p-7 text-white shadow-[0_18px_44px_rgba(21,95,112,0.14)]">
               <MessageSquare size={30} aria-hidden />
               <h2 className="mt-5 text-3xl font-black">상담 접수 후 담당자가 확인합니다.</h2>
               <p className="mt-4 leading-8 text-white/85">제품명, 수량, 기관명, 희망 일정이 있으면 더 빠르게 안내할 수 있습니다.</p>
@@ -32,7 +32,7 @@ export default async function ContactPage() {
               [Clock, "응답 기준", "영업일 기준 순차 확인"],
               [Building2, "기관 납품", "수량·일정·예산 상담"],
             ].map(([Icon, title, text]) => (
-              <div key={title as string} className="flex gap-4 rounded-lg border border-[#DDE7E7] bg-white p-5 shadow-sm">
+              <div key={title as string} className="flex gap-4 rounded-[22px] bg-white/82 p-5 ring-1 ring-[#DDE7E7]/65">
                 <Icon className="shrink-0 text-[#155F70]" size={24} aria-hidden />
                 <div>
                   <p className="font-black text-[#243238]">{title as string}</p>

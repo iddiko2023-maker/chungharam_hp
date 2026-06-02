@@ -19,12 +19,12 @@ export default function Footer() {
               어르신 생활지원 제품을 발굴하고 기관 납품, 제품 후원, 구매 문의를 연결하는 신뢰 중심 플랫폼입니다.
             </p>
           </div>
-          <div className="rounded-lg border border-[#D9E7E8] bg-white/60 p-5 leading-8 text-[#5B6B73]">
+          <div className="rounded-[24px] bg-white/52 p-5 leading-8 text-[#5B6B73] ring-1 ring-[#D9E7E8]/65">
             <p className="font-black text-[#17252A]">회사 정보</p>
             <p>사업자등록번호: 준비중</p>
             <p>주소: 서울특별시 소재</p>
           </div>
-          <div className="rounded-lg border border-[#D9E7E8] bg-white/60 p-5 leading-8 text-[#5B6B73]">
+          <div className="rounded-[24px] bg-white/52 p-5 leading-8 text-[#5B6B73] ring-1 ring-[#D9E7E8]/65">
             <p className="font-black text-[#17252A]">문의</p>
             <p>전화: 02-0000-0000</p>
             <p>이메일: contact@cheongharam.co.kr</p>

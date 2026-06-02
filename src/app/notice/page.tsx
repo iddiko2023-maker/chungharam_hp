@@ -20,8 +20,8 @@ export default async function NoticePage() {
         imageAlt="공지사항 안내 이미지"
       />
       <Container className="py-16 md:py-24">
-        <div className="overflow-hidden rounded-lg border border-[#DDE7E7] bg-white shadow-sm">
-          <div className="hidden grid-cols-[160px_1fr_140px] border-b border-[#E5E7EB] bg-[#F8FAFB] px-6 py-4 text-sm font-black text-[#333333] md:grid">
+        <div className="overflow-hidden rounded-[28px] bg-white/82 ring-1 ring-[#DDE7E7]/65">
+          <div className="hidden grid-cols-[160px_1fr_140px] border-b border-[#E5E7EB]/70 bg-[#F8FAFB] px-6 py-4 text-sm font-black text-[#333333] md:grid">
             <p>구분</p>
             <p>제목</p>
             <p>등록일</p>

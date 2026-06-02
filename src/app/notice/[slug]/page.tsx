@@ -15,7 +15,7 @@ export default async function NoticeDetailPage({ params }: { params: Promise<{ s
 
   return (
     <Container className="py-14 md:py-20">
-      <article className="mx-auto max-w-3xl rounded-lg border border-[#E5E7EB] bg-white p-7 shadow-sm">
+      <article className="mx-auto max-w-3xl rounded-[28px] bg-white/86 p-7 ring-1 ring-[#DDE7E7]/65">
         <p className="font-bold text-[#2D8C8C]">{formatDate(post.published_at)}</p>
         <h1 className="mt-3 text-4xl font-black leading-tight text-[#333333]">{post.title}</h1>
         <p className="mt-5 text-xl leading-8 text-[#6B7280]">{post.excerpt}</p>

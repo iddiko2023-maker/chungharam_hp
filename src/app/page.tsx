@@ -50,7 +50,7 @@ export default async function Home() {
             <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB]/92 via-transparent to-transparent" aria-hidden />
             <div className="relative mx-auto flex min-h-[560px] w-full max-w-7xl flex-col items-start justify-center px-4 py-14 sm:min-h-[600px] sm:px-6 md:min-h-[640px] md:py-20 lg:px-8">
               <div className="max-w-2xl">
-                <p className="mb-5 inline-flex rounded-md border border-[#D9E7E8] bg-white/85 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm backdrop-blur">
+                <p className="mb-5 inline-flex rounded-full bg-white/85 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
                   어르신 생활지원 제품 플랫폼
                 </p>
                 <h1 className="text-4xl font-black leading-[1.14] text-[#17252A] md:text-5xl lg:text-[56px]">
@@ -74,7 +74,7 @@ export default async function Home() {
               </div>
               <div className="mt-8 flex flex-wrap gap-2">
                 {heroStats.map((item) => (
-                  <div key={item.title} className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-[#D9E7E8] bg-white/86 px-3 py-2 text-sm font-bold text-[#24343A] shadow-sm backdrop-blur">
+                  <div key={item.title} className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/82 px-3 py-2 text-sm font-bold text-[#24343A] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
                     <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${item.tone}`}>
                       <item.icon size={15} aria-hidden />
                     </span>
@@ -92,7 +92,7 @@ export default async function Home() {
           <SectionTitle eyebrow="청하람이 하는 일" title="복지 현장에 필요한 제품과 연결을 설계합니다." description="제품 판매보다 생활지원, 안전, 건강관리, 기관 납품, 제품 후원의 흐름을 명확하게 안내합니다." />
           <div className="grid gap-5 md:grid-cols-2 xl:grid-cols-5">
             {workItems.map((item) => (
-              <article key={item.title} className="group rounded-lg border border-[#D9E7E8] bg-white p-6 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#C7E9E4] hover:shadow-md">
+              <article key={item.title} className="group rounded-[24px] bg-white/78 p-6 ring-1 ring-[#D9E7E8]/65 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:ring-[#C7E9E4] hover:shadow-[0_16px_36px_rgba(15,107,120,0.08)]">
                 <div className={`flex h-14 w-14 items-center justify-center rounded-lg transition group-hover:scale-105 ${item.tone}`}>
                   <item.icon className="h-7 w-7" aria-hidden />
                 </div>
@@ -122,7 +122,7 @@ export default async function Home() {
 
       <section className="bg-[#F3F7F8] py-16 md:py-24">
         <Container>
-          <div className="grid gap-8 rounded-lg bg-gradient-to-br from-[#147D88] via-[#1C8F8A] to-[#2F9E96] p-7 text-white shadow-[0_24px_60px_rgba(15,107,120,0.18)] md:grid-cols-[1fr_auto] md:items-center md:p-10">
+          <div className="grid gap-8 rounded-[28px] bg-gradient-to-br from-[#147D88] via-[#1C8F8A] to-[#2F9E96] p-7 text-white shadow-[0_18px_48px_rgba(15,107,120,0.14)] md:grid-cols-[1fr_auto] md:items-center md:p-10">
             <div>
               <h2 className="text-3xl font-black">필요한 제품을 필요한 어르신에게 전달합니다.</h2>
               <div className="mt-5 grid gap-2 text-white sm:grid-cols-3">
@@ -152,7 +152,7 @@ export default async function Home() {
             <SectionTitle eyebrow="후원 현황" title="청하람과 함께 이어지는 따뜻한 연결" description="현재는 예시 데이터이며, 실제 운영 데이터 연동 시 관리자 기준 집계로 교체할 수 있습니다." />
             <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
               {donationStats.map(([label, value]) => (
-                <div key={label} className="rounded-lg border border-[#D9E7E8] bg-white p-5 shadow-sm transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+                <div key={label} className="rounded-[22px] bg-white/86 p-5 ring-1 ring-[#D9E7E8]/65 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:shadow-[0_14px_32px_rgba(15,107,120,0.08)]">
                   <p className="text-sm font-bold tracking-tight text-[#0F6B78]">{label}</p>
                   <p className="mt-3 text-4xl font-black text-[#17252A]">{value}</p>
                 </div>
@@ -180,7 +180,7 @@ export default async function Home() {
 
       <section className="bg-white py-16 md:py-24">
         <Container>
-          <div className="rounded-lg border border-[#D9E7E8] bg-white p-7 shadow-sm transition-shadow hover:shadow-md md:p-10">
+          <div className="rounded-[28px] bg-[#F8FAFB] p-7 ring-1 ring-[#D9E7E8]/70 transition-shadow hover:shadow-[0_14px_34px_rgba(15,107,120,0.08)] md:p-10">
             <div className="grid gap-6 md:grid-cols-[1fr_auto] md:items-center">
               <div>
                 <h2 className="text-3xl font-black text-[#17252A]">제품 구매, 기관 납품, 후원 문의가 필요하신가요?</h2>

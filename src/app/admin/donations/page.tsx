@@ -21,7 +21,7 @@ export default async function AdminDonationsPage() {
       <AdminHeader title="후원 신청 관리" description="제품 후원 신청 정보를 확인합니다." />
       <div className="grid gap-3">
         {rows.map((row) => (
-          <article key={row.id} className="rounded-lg border border-[#E5E7EB] bg-white p-5 shadow-sm">
+          <article key={row.id} className="rounded-[22px] bg-white/84 p-5 ring-1 ring-[#DDE7E7]/65">
             <div className="flex flex-col justify-between gap-3 md:flex-row md:items-center">
               <div>
                 <p className="text-xl font-black">

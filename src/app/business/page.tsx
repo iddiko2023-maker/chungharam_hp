@@ -35,7 +35,7 @@ export default function BusinessPage() {
       />
       <Container className="py-12 md:py-16">
         <section className="grid gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-stretch">
-          <div className="rounded-lg bg-[#2D8C8C] p-7 text-white shadow-lg md:p-9">
+          <div className="rounded-[30px] bg-[#2D8C8C] p-7 text-white shadow-[0_18px_44px_rgba(21,95,112,0.14)] md:p-9">
             <Building2 size={34} aria-hidden />
             <h2 className="mt-5 text-3xl font-black leading-tight md:text-4xl">
               기관의 예산과 현장 조건에 맞춰 제품 구성을 제안합니다.
@@ -48,7 +48,7 @@ export default function BusinessPage() {
               <ButtonLink href="/products" variant="outline">제품 안내 보기</ButtonLink>
             </div>
           </div>
-          <div className="relative min-h-[360px] overflow-hidden rounded-lg border border-[#DDE7E7] bg-white shadow-lg">
+          <div className="relative min-h-[360px] overflow-hidden rounded-[30px] bg-white ring-1 ring-[#DDE7E7]/65 shadow-[0_18px_44px_rgba(15,107,120,0.10)]">
             <Image
               src="/images/news-business-consulting.png"
               alt="기관 납품 상담 장면"
@@ -79,10 +79,10 @@ export default function BusinessPage() {
           />
           <div className="grid gap-4 md:grid-cols-2 xl:grid-cols-4">
             {process.map((item, index) => (
-              <article key={item.title} className="rounded-lg border border-[#DDE7E7] bg-white p-6 shadow-sm">
+              <article key={item.title} className="rounded-[24px] bg-white/82 p-6 ring-1 ring-[#DDE7E7]/65 transition hover:bg-white hover:shadow-[0_14px_32px_rgba(15,107,120,0.08)]">
                 <div className="flex items-center justify-between">
                   <span className="text-sm font-black text-[#2D8C8C]">STEP {index + 1}</span>
-                  <span className="flex h-11 w-11 items-center justify-center rounded-lg bg-[#E7F6F6] text-[#2D8C8C]">
+                  <span className="flex h-11 w-11 items-center justify-center rounded-full bg-[#E7F6F6] text-[#2D8C8C]">
                     <item.icon size={22} aria-hidden />
                   </span>
                 </div>
@@ -104,7 +104,7 @@ export default function BusinessPage() {
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {institutions.map((item) => (
-              <div key={item} className="flex min-h-16 items-center gap-3 rounded-lg border border-[#DDE7E7] bg-white px-5 py-4 shadow-sm">
+              <div key={item} className="flex min-h-16 items-center gap-3 rounded-[20px] bg-white/82 px-5 py-4 ring-1 ring-[#DDE7E7]/65">
                 <CheckCircle2 size={20} className="text-[#2D8C8C]" aria-hidden />
                 <p className="font-black text-[#333333]">{item}</p>
               </div>

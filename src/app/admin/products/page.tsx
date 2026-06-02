@@ -10,11 +10,11 @@ export default async function AdminProductsPage() {
     <>
       <div className="flex flex-col justify-between gap-4 md:flex-row md:items-center">
         <AdminHeader title="제품 관리" description="제품 등록, 수정, 노출 상태를 관리합니다." />
-        <Link href="/admin/products/new" className="inline-flex min-h-11 items-center justify-center rounded-lg bg-[#2D8C8C] px-5 py-3 font-bold text-white">
+        <Link href="/admin/products/new" className="inline-flex min-h-11 items-center justify-center rounded-full bg-[#2D8C8C] px-5 py-3 font-bold text-white">
           제품 등록
         </Link>
       </div>
-      <div className="overflow-hidden rounded-lg border border-[#E5E7EB] bg-white shadow-sm">
+      <div className="overflow-hidden rounded-[24px] bg-white/84 ring-1 ring-[#DDE7E7]/65">
         <table className="w-full min-w-[720px] text-left">
           <thead className="bg-[#F8FAFB]">
             <tr>

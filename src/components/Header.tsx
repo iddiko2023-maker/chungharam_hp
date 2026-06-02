@@ -40,7 +40,7 @@ export default function Header() {
         <div className="hidden items-center gap-3 lg:flex">
           <Link
             href="/contact"
-            className="inline-flex min-h-11 items-center gap-2 rounded-lg bg-[#0F6B78] px-4 py-3 font-bold text-white shadow-sm transition hover:bg-[#147D88] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5A623]"
+            className="inline-flex min-h-11 items-center gap-2 rounded-full bg-[#0F6B78] px-4 py-3 font-bold text-white shadow-sm transition hover:bg-[#147D88] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5A623]"
           >
             <Phone size={18} aria-hidden />
             문의하기
@@ -48,7 +48,7 @@ export default function Header() {
         </div>
         <button
           type="button"
-          className="inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#D9E7E8] bg-white transition hover:bg-[#EAF7F5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5A623] lg:hidden"
+          className="inline-flex h-11 w-11 items-center justify-center rounded-full border border-[#D9E7E8] bg-white transition hover:bg-[#EAF7F5] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5A623] lg:hidden"
           onClick={() => setOpen((value) => !value)}
           aria-label="모바일 메뉴 열기"
         >
@@ -70,7 +70,7 @@ export default function Header() {
             ))}
             <Link
               href="/contact"
-              className="mt-2 inline-flex min-h-11 items-center justify-center gap-2 rounded-lg bg-[#0F6B78] px-4 py-3 font-bold text-white"
+              className="mt-2 inline-flex min-h-11 items-center justify-center gap-2 rounded-full bg-[#0F6B78] px-4 py-3 font-bold text-white"
               onClick={() => setOpen(false)}
             >
               <Phone size={18} aria-hidden />

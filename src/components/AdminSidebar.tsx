@@ -15,24 +15,24 @@ const items = [
 
 export default function AdminSidebar() {
   return (
-    <aside className="sticky top-24 rounded-lg border border-[#DDE7E7] bg-white p-4 shadow-sm">
+    <aside className="sticky top-24 rounded-[26px] bg-white/84 p-4 ring-1 ring-[#DDE7E7]/65">
       <div className="mb-4 border-b border-[#EEF2F2] pb-4">
         <Image src="/cheongharam-logo.svg" alt="청하람" width={170} height={132} className="h-14 w-auto object-contain" />
         <p className="mt-2 text-xs font-black text-[#64748B]">ADMIN CONSOLE</p>
       </div>
-      <Link href="/" className="mb-4 flex min-h-11 items-center gap-2 rounded-lg bg-[#E7F6F6] px-3 font-bold text-[#155F70]">
+      <Link href="/" className="mb-4 flex min-h-11 items-center gap-2 rounded-full bg-[#E7F6F6] px-3 font-bold text-[#155F70]">
         <Home size={18} aria-hidden />
         사이트로 이동
       </Link>
       <nav className="grid gap-1">
         {items.map((item) => (
-          <Link key={item.href} href={item.href} className="flex min-h-11 items-center gap-2 rounded-lg px-3 font-bold text-[#334155] hover:bg-[#F2FBFB] hover:text-[#155F70]">
+          <Link key={item.href} href={item.href} className="flex min-h-11 items-center gap-2 rounded-full px-3 font-bold text-[#334155] hover:bg-[#F2FBFB] hover:text-[#155F70]">
             <item.icon size={18} aria-hidden />
             {item.label}
           </Link>
         ))}
       </nav>
-      <div className="mt-5 rounded-lg bg-[#F8FAFB] p-3 text-sm leading-6 text-[#64748B]">
+      <div className="mt-5 rounded-[20px] bg-[#F8FAFB] p-3 text-sm leading-6 text-[#64748B]">
         <ClipboardList className="mb-2 text-[#155F70]" size={18} aria-hidden />
         결제, 배송조회, QR 추적 기능은 현재 관리자 범위에서 제외됩니다.
       </div>

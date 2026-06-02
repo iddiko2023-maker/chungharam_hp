@@ -22,7 +22,7 @@ export default async function DonationPage() {
       />
       <Container className="py-12 md:py-16">
         <div className="mb-12 grid gap-6 lg:grid-cols-[1fr_0.8fr]">
-          <div className="rounded-lg bg-[#155F70] p-7 text-white shadow-lg md:p-9">
+          <div className="rounded-[30px] bg-[#155F70] p-7 text-white shadow-[0_18px_44px_rgba(21,95,112,0.14)] md:p-9">
             <Gift size={34} aria-hidden />
             <h2 className="mt-5 text-3xl font-black leading-tight">후원은 제품 선택보다 대상과 전달 가능성 확인이 먼저입니다.</h2>
             <p className="mt-4 max-w-2xl text-lg leading-8 text-white/85">
@@ -38,8 +38,8 @@ export default async function DonationPage() {
               ["대상과 수량 상담", "기관·대상자·예산 기준 정리"],
               ["전달 일정 확인", "전달 가능 일정과 방식 안내"],
             ].map(([item, text], index) => (
-              <div key={item} className="flex gap-4 rounded-lg border border-[#DDE7E7] bg-white p-5 shadow-sm">
-                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-[#E7F6F6] font-black text-[#155F70]">
+              <div key={item} className="flex gap-4 rounded-[22px] bg-white/82 p-5 ring-1 ring-[#DDE7E7]/65">
+                <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#E7F6F6] font-black text-[#155F70]">
                   {index + 1}
                 </div>
                 <div>
@@ -63,7 +63,7 @@ export default async function DonationPage() {
             <ProductCard key={product.id} product={product} />
           ))}
         </div>
-        <div className="mt-12 grid gap-4 rounded-lg border border-[#DDE7E7] bg-white p-6 shadow-sm md:grid-cols-3">
+        <div className="mt-12 grid gap-4 rounded-[28px] bg-[#F8FAFB] p-6 ring-1 ring-[#DDE7E7]/65 md:grid-cols-3">
           {[
             [HandHeart, "문의 중심", "결제 기능 없이 후원 의사를 접수합니다."],
             [PackageCheck, "제품 구성", "현장 수요에 맞는 제품을 추천합니다."],

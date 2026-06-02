@@ -8,7 +8,7 @@ export default function PostCard({ post }: { post: Post }) {
   const href = post.type === "notice" ? `/notice/${post.slug}` : `/news/${post.slug}`;
 
   return (
-    <article className="group overflow-hidden rounded-lg border border-[#D9E7E8] bg-white shadow-sm transition-all duration-300 hover:-translate-y-1 hover:border-[#C7E9E4] hover:shadow-[0_18px_40px_rgba(15,107,120,0.12)]">
+    <article className="group overflow-hidden rounded-[22px] bg-white/88 ring-1 ring-[#D9E7E8]/70 transition-all duration-300 hover:-translate-y-0.5 hover:bg-white hover:ring-[#C7E9E4] hover:shadow-[0_16px_36px_rgba(15,107,120,0.10)]">
       <div className="relative aspect-[16/9] overflow-hidden bg-[#E5EEF0]">
         <Image
           src={post.thumbnail_url || "/images/news-delivery.png"}

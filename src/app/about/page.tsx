@@ -18,7 +18,7 @@ export default function AboutPage() {
         imageAlt="청하람 소개 상담 이미지"
       />
       <Container className="grid gap-10 py-14 md:grid-cols-2 md:py-20">
-        <div className="relative min-h-[360px] overflow-hidden rounded-lg">
+        <div className="relative min-h-[360px] overflow-hidden rounded-[30px] ring-1 ring-[#DDE7E7]/65 shadow-[0_18px_44px_rgba(15,107,120,0.08)]">
           <Image
             src="/images/about-consultation.png"
             alt="복지 현장 상담"
