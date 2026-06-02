@@ -1,0 +1,31 @@
+<svg width="720" height="560" viewBox="0 0 720 560" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">CHUNGHARAM 청하람 로고</title>
+  <desc id="desc">푸른 물결과 CHUNGHARAM Clean Care Company 청하람 텍스트로 구성된 로고</desc>
+  <defs>
+    <linearGradient id="wave1" x1="124" y1="122" x2="530" y2="122" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#087BB6"/>
+      <stop offset="0.54" stop-color="#1E9CD1"/>
+      <stop offset="1" stop-color="#77C5EA"/>
+    </linearGradient>
+    <linearGradient id="wave2" x1="120" y1="178" x2="590" y2="178" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#004B94"/>
+      <stop offset="0.45" stop-color="#0786C0"/>
+      <stop offset="1" stop-color="#82C5E9"/>
+    </linearGradient>
+    <linearGradient id="wave3" x1="132" y1="202" x2="574" y2="202" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#003F86"/>
+      <stop offset="0.65" stop-color="#0085BC"/>
+      <stop offset="1" stop-color="#004282"/>
+    </linearGradient>
+  </defs>
+
+  <path d="M123 132C197 154 263 112 327 57C391 2 475 -12 532 14C554 24 569 42 577 62C506 28 451 48 391 82C332 116 274 162 205 169C169 173 142 162 123 132Z" fill="url(#wave1)"/>
+  <path d="M120 154C188 189 275 166 354 117C424 74 506 54 569 83C594 95 607 116 612 137C574 114 520 119 448 146C383 171 326 209 251 219C190 227 146 197 120 154Z" fill="url(#wave2)"/>
+  <path d="M132 181C207 224 286 213 368 178C456 140 539 119 588 151C613 167 612 201 583 231C594 210 585 192 563 184C520 167 455 189 393 221C319 260 237 278 171 232C150 217 139 201 132 181Z" fill="url(#wave3)"/>
+
+  <text x="360" y="350" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="84" font-weight="800" letter-spacing="8" fill="#1B5187">CHUNGHARAM</text>
+  <line x1="0" y1="404" x2="110" y2="404" stroke="#D9D9D9" stroke-width="4"/>
+  <line x1="610" y1="404" x2="720" y2="404" stroke="#D9D9D9" stroke-width="4"/>
+  <text x="360" y="420" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#8B8F92">Clean Care Company</text>
+  <text x="360" y="535" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="86" font-weight="900" letter-spacing="66" fill="#0B4E8D">청하람</text>
+</svg>
