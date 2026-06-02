@@ -8,7 +8,7 @@ export default function PostCard({ post }: { post: Post }) {
   const href = post.type === "notice" ? `/notice/${post.slug}` : `/news/${post.slug}`;
 
   return (
-    <article className="group overflow-hidden rounded-lg border border-[#DDE7E7] bg-white shadow-sm transition hover:-translate-y-1 hover:shadow-lg">
+    <article className="group overflow-hidden rounded-lg border border-[#DDE7E7] bg-white shadow-sm transition duration-300 hover:-translate-y-1 hover:border-[#B7DCDC] hover:shadow-xl">
       <div className="relative aspect-[16/9] bg-[#E5E7EB]">
         <Image
           src={post.thumbnail_url || "/images/news-delivery.png"}
@@ -19,13 +19,13 @@ export default function PostCard({ post }: { post: Post }) {
         />
       </div>
       <div className="p-5">
-        <p className="mb-3 inline-flex items-center gap-2 text-sm font-bold text-[#155F70]">
+        <p className="mb-3 inline-flex items-center gap-2 text-sm font-bold text-[#2D8C8C]">
           <CalendarDays size={16} aria-hidden />
           {formatDate(post.published_at)}
         </p>
-        <h3 className="text-xl font-black leading-snug text-[#243238]">{post.title}</h3>
+        <h3 className="text-xl font-black leading-snug text-[#333333]">{post.title}</h3>
         <p className="mt-3 min-h-16 leading-7 text-[#6B7280]">{post.excerpt}</p>
-        <Link href={href} className="mt-4 inline-flex min-h-11 items-center gap-2 font-black text-[#155F70]">
+        <Link href={href} className="mt-4 inline-flex min-h-11 items-center gap-2 font-black text-[#2D8C8C] transition hover:text-[#247575] focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-[#F5A623]">
           자세히 보기
           <ArrowUpRight size={17} aria-hidden />
         </Link>
