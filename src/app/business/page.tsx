@@ -30,6 +30,8 @@ export default function BusinessPage() {
         eyebrow="BUSINESS SUPPLY"
         title="기관 납품 안내"
         description="복지기관, 단체, 기업 대상 생활지원 제품 납품 상담을 진행합니다. 제품 판매보다 현장 수요와 전달 가능성을 먼저 확인합니다."
+        imageSrc="/images/news-business-consulting.png"
+        imageAlt="기관 납품 상담 장면"
       />
       <Container className="py-12 md:py-16">
         <section className="grid gap-8 lg:grid-cols-[1fr_0.92fr] lg:items-stretch">

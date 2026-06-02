@@ -6,7 +6,12 @@ export const metadata = { title: "이용약관" };
 export default function TermsPage() {
   return (
     <>
-      <PageHero title="이용약관" description="청하람 홈페이지 이용과 문의 접수에 관한 기본 약관입니다." />
+      <PageHero
+        title="이용약관"
+        description="청하람 홈페이지 이용과 문의 접수에 관한 기본 약관입니다."
+        imageSrc="/images/news-business-consulting.png"
+        imageAlt="이용약관 안내 이미지"
+      />
       <Container className="prose-clean py-14 text-lg leading-8 text-[#333333] md:py-20">
         <p>청하람 홈페이지는 제품 정보 제공, 기관 납품 문의, 제품 후원 신청 접수를 목적으로 운영됩니다.</p>
         <p>홈페이지에 표시된 제품 정보와 견적 조건은 상담 과정에서 변경될 수 있습니다.</p>

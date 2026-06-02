@@ -17,6 +17,8 @@ export default async function DonationPage() {
         eyebrow="DONATION PROGRAM"
         title="제품 후원 안내"
         description="필요한 제품을 필요한 어르신에게 전달합니다. 후원 목적과 예산에 맞춰 제품을 추천합니다."
+        imageSrc="/images/news-delivery.png"
+        imageAlt="제품 후원 전달 장면"
       />
       <Container className="py-12 md:py-16">
         <div className="mb-12 grid gap-6 lg:grid-cols-[1fr_0.8fr]">

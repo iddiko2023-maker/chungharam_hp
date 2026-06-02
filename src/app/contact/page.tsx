@@ -11,7 +11,13 @@ export default async function ContactPage() {
 
   return (
     <>
-      <PageHero eyebrow="CONTACT" title="문의하기" description="제품 구매, 기관 납품, 후원, 제휴 문의를 남겨주세요." />
+      <PageHero
+        eyebrow="CONTACT"
+        title="문의하기"
+        description="제품 구매, 기관 납품, 후원, 제휴 문의를 남겨주세요."
+        imageSrc="/images/news-business-consulting.png"
+        imageAlt="상담 문의 장면"
+      />
       <Container className="py-12 md:py-16">
         <div className="grid gap-8 lg:grid-cols-[0.86fr_1.14fr]">
           <aside className="grid gap-4">

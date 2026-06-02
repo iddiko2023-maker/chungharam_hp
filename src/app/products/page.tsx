@@ -15,6 +15,8 @@ export default async function ProductsPage() {
         eyebrow="PRODUCT CATALOG"
         title="제품 안내"
         description="생활지원, 안전보호, 건강관리 제품을 소개합니다. 구매와 기관 납품은 문의 후 상담으로 진행됩니다."
+        imageSrc="/images/product-walker.png"
+        imageAlt="어르신 생활지원 제품"
       />
       <Container className="py-12 md:py-16">
         <div className="mb-8 grid gap-4 rounded-lg border border-[#DDE7E7] bg-white p-5 shadow-sm lg:grid-cols-[1fr_auto] lg:items-center">

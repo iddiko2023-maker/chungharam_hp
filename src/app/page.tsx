@@ -35,43 +35,9 @@ export default async function Home() {
 
   return (
     <>
-      <section className="relative overflow-hidden border-b border-[#D9E7E8] bg-gradient-to-br from-[#EAF7F5] via-[#F8FAFB] to-white">
-        <Container className="relative grid gap-12 py-14 md:grid-cols-[1.05fr_0.95fr] md:items-center md:py-20 lg:py-28">
-          <div>
-            <p className="mb-5 inline-flex rounded-md bg-white/90 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm ring-1 ring-[#D9E7E8]">
-              어르신 생활지원 제품 플랫폼
-            </p>
-            <h1 className="max-w-4xl text-4xl font-black leading-tight text-[#17252A] md:text-5xl lg:text-6xl xl:text-7xl">
-              어르신의 생활을 더 편안하게,
-              <br />
-              보이지 않는 안전까지 살피는 청하람
-            </h1>
-            <p className="mt-6 max-w-3xl text-lg leading-8 text-[#5B6B73] md:text-xl md:leading-9">
-              청하람은 노인지원재단과 함께 어르신에게 필요한 제품을 발굴하고 생활지원, 안전관리,
-              제품후원을 연결하는 기업입니다.
-            </p>
-            <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-              <ButtonLink href="/products">제품 보기</ButtonLink>
-              <ButtonLink href="/donation/apply" variant="secondary">
-                후원하기
-              </ButtonLink>
-              <ButtonLink href="/business" variant="outline">
-                기관 납품 문의
-              </ButtonLink>
-            </div>
-            <div className="mt-8 grid gap-3 sm:grid-cols-3">
-              {heroStats.map((item) => (
-                <div key={item.title} className="rounded-lg border border-[#D9E7E8] bg-white/92 px-4 py-4 shadow-sm backdrop-blur">
-                  <span className={`mb-3 flex h-9 w-9 items-center justify-center rounded-lg ${item.tone}`}>
-                    <item.icon size={18} aria-hidden />
-                  </span>
-                  <p className="font-black text-[#17252A]">{item.title}</p>
-                  <p className="mt-1 text-sm font-bold text-[#5B6B73]">{item.text}</p>
-                </div>
-              ))}
-            </div>
-          </div>
-          <div className="relative min-h-[450px] overflow-hidden rounded-lg border border-[#D9E7E8] bg-white shadow-[0_24px_60px_rgba(15,107,120,0.16)]">
+      <section className="border-b border-[#D9E7E8] bg-gradient-to-br from-[#EAF7F5] via-[#F8FAFB] to-white">
+        <Container className="py-8 md:py-12 lg:py-14">
+          <div className="relative overflow-hidden rounded-lg border border-[#D9E7E8] bg-white shadow-[0_24px_60px_rgba(15,107,120,0.16)]">
             <Image
               src="/images/hero-consultation.png"
               alt="어르신 생활지원 상담 장면"
@@ -80,10 +46,41 @@ export default async function Home() {
               sizes="(max-width: 768px) 100vw, 50vw"
               className="object-cover"
             />
-            <div className="absolute inset-x-0 bottom-0 bg-white/95 p-6 backdrop-blur">
-              <div className="grid gap-3 sm:grid-cols-[0.8fr_1.2fr]">
-                <p className="text-xl font-black text-[#17252A]">문의 기반 운영</p>
-                <p className="text-sm leading-6 text-[#5B6B73]">제품 구매, 기관 납품, 후원 신청을 상담 흐름으로 연결합니다.</p>
+            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/20" aria-hidden />
+            <div className="relative min-h-[680px] px-5 py-10 sm:min-h-[620px] sm:px-8 md:px-10 lg:min-h-[640px] lg:px-12 lg:py-14">
+              <div className="max-w-3xl">
+                <p className="mb-5 inline-flex rounded-md bg-white/90 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm ring-1 ring-[#D9E7E8]">
+                  어르신 생활지원 제품 플랫폼
+                </p>
+                <h1 className="text-4xl font-black leading-tight text-[#17252A] md:text-5xl lg:text-6xl">
+                  어르신의 생활을 더 편안하게,
+                  <br />
+                  보이지 않는 안전까지 살피는 청하람
+                </h1>
+                <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5B6B73] md:text-xl md:leading-9">
+                  청하람은 노인지원재단과 함께 어르신에게 필요한 제품을 발굴하고 생활지원, 안전관리,
+                  제품후원을 연결하는 기업입니다.
+                </p>
+                <div className="mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
+                  <ButtonLink href="/products">제품 보기</ButtonLink>
+                  <ButtonLink href="/donation/apply" variant="secondary">
+                    후원하기
+                  </ButtonLink>
+                  <ButtonLink href="/business" variant="outline">
+                    기관 납품 문의
+                  </ButtonLink>
+                </div>
+              </div>
+              <div className="absolute inset-x-5 bottom-5 grid gap-3 sm:inset-x-8 sm:grid-cols-3 lg:inset-x-12 lg:bottom-10">
+                {heroStats.map((item) => (
+                  <div key={item.title} className="rounded-lg border border-[#D9E7E8] bg-white/92 px-4 py-4 shadow-sm backdrop-blur">
+                    <span className={`mb-3 flex h-9 w-9 items-center justify-center rounded-lg ${item.tone}`}>
+                      <item.icon size={18} aria-hidden />
+                    </span>
+                    <p className="font-black text-[#17252A]">{item.title}</p>
+                    <p className="mt-1 text-sm font-bold text-[#5B6B73]">{item.text}</p>
+                  </div>
+                ))}
               </div>
             </div>
           </div>

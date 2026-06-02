@@ -11,7 +11,12 @@ export default function AboutPage() {
 
   return (
     <>
-      <PageHero title="청하람 소개" description="청하람은 어르신에게 실제로 필요한 제품을 찾고, 기관과 후원자가 쉽게 연결되도록 돕습니다." />
+      <PageHero
+        title="청하람 소개"
+        description="청하람은 어르신에게 실제로 필요한 제품을 찾고, 기관과 후원자가 쉽게 연결되도록 돕습니다."
+        imageSrc="/images/about-consultation.png"
+        imageAlt="청하람 소개 상담 이미지"
+      />
       <Container className="grid gap-10 py-14 md:grid-cols-2 md:py-20">
         <div className="relative min-h-[360px] overflow-hidden rounded-lg">
           <Image

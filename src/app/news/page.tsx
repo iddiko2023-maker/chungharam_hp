@@ -10,7 +10,13 @@ export default async function NewsPage() {
 
   return (
     <>
-      <PageHero eyebrow="NEWSROOM" title="활동 소식" description="청하람의 제품 전달, 협력, 후원 연결 소식을 전합니다." />
+      <PageHero
+        eyebrow="NEWSROOM"
+        title="활동 소식"
+        description="청하람의 제품 전달, 협력, 후원 연결 소식을 전합니다."
+        imageSrc="/images/news-delivery.png"
+        imageAlt="청하람 활동 소식"
+      />
       <Container className="py-16 md:py-24">
         <div className="mb-8 rounded-lg border border-[#DDE7E7] bg-white p-6 shadow-sm">
           <p className="text-sm font-black text-[#2D8C8C]">청하람 활동 아카이브</p>
