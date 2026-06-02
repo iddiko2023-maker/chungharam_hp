@@ -15,27 +15,24 @@ export default function PageHero({
   imageAlt?: string;
 }) {
   return (
-    <section className="border-b border-[#D9E7E8] bg-gradient-to-br from-[#EAF7F5] via-[#F8FAFB] to-white">
-      <Container className="py-10 md:py-14">
-        <div className="relative overflow-hidden rounded-lg border border-[#D9E7E8] bg-white shadow-[0_18px_45px_rgba(15,107,120,0.10)]">
-          {imageSrc ? (
-            <Image
-              src={imageSrc}
-              alt={imageAlt || title}
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-          ) : null}
-          <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/25" aria-hidden />
-          <div className="relative min-h-[280px] px-6 py-10 md:min-h-[340px] md:px-10 md:py-14 lg:px-12">
-            <div className="max-w-3xl">
-              {eyebrow ? <p className="mb-4 text-sm font-bold tracking-tight text-[#0F6B78]">{eyebrow}</p> : null}
-              <h1 className="text-4xl font-black leading-tight text-[#17252A] md:text-5xl">{title}</h1>
-              <p className="mt-5 max-w-2xl text-lg leading-8 text-[#5B6B73]">{description}</p>
-            </div>
-          </div>
+    <section className="relative isolate overflow-hidden border-b border-[#D9E7E8] bg-gradient-to-br from-[#EAF7F5] via-[#F8FAFB] to-white">
+      {imageSrc ? (
+        <Image
+          src={imageSrc}
+          alt={imageAlt || title}
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover"
+        />
+      ) : null}
+      <div className="absolute inset-0 bg-gradient-to-r from-white/96 via-white/90 to-white/70 md:to-white/28" aria-hidden />
+      <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB]/82 via-transparent to-transparent" aria-hidden />
+      <Container className="relative flex min-h-[300px] items-center py-12 md:min-h-[360px] md:py-16 lg:min-h-[400px]">
+        <div className="max-w-2xl">
+          {eyebrow ? <p className="mb-4 inline-flex rounded-md border border-[#D9E7E8] bg-white/82 px-3 py-1.5 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm backdrop-blur">{eyebrow}</p> : null}
+          <h1 className="text-3xl font-black leading-[1.16] text-[#17252A] md:text-4xl lg:text-5xl">{title}</h1>
+          <p className="mt-5 max-w-xl text-base leading-8 text-[#5B6B73] md:text-lg md:leading-9">{description}</p>
         </div>
       </Container>
     </section>

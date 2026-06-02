@@ -35,33 +35,34 @@ export default async function Home() {
 
   return (
     <>
-      <section className="border-b border-[#D9E7E8] bg-gradient-to-br from-[#EAF7F5] via-[#F8FAFB] to-white">
-        <Container className="py-8 md:py-12 lg:py-14">
-          <div className="relative overflow-hidden rounded-lg border border-[#D9E7E8] bg-white shadow-[0_24px_60px_rgba(15,107,120,0.16)]">
+      <section className="overflow-hidden border-b border-[#D9E7E8] bg-[#F3F7F8]">
+        <Container className="py-0">
+          <div className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F3F7F8]">
             <Image
               src="/images/hero-consultation.png"
               alt="어르신 생활지원 상담 장면"
               fill
               priority
-              sizes="(max-width: 768px) 100vw, 50vw"
+              sizes="100vw"
               className="object-cover"
             />
-            <div className="absolute inset-0 bg-gradient-to-r from-white via-white/88 to-white/20" aria-hidden />
-            <div className="relative min-h-[680px] px-5 py-10 sm:min-h-[620px] sm:px-8 md:px-10 lg:min-h-[640px] lg:px-12 lg:py-14">
-              <div className="max-w-3xl">
-                <p className="mb-5 inline-flex rounded-md bg-white/90 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm ring-1 ring-[#D9E7E8]">
+            <div className="absolute inset-0 bg-gradient-to-r from-white/96 via-white/90 to-white/72 md:to-white/34" aria-hidden />
+            <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB]/92 via-transparent to-transparent" aria-hidden />
+            <div className="relative mx-auto flex min-h-[560px] w-full max-w-7xl flex-col items-start justify-center px-4 py-14 sm:min-h-[600px] sm:px-6 md:min-h-[640px] md:py-20 lg:px-8">
+              <div className="max-w-2xl">
+                <p className="mb-5 inline-flex rounded-md border border-[#D9E7E8] bg-white/85 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] shadow-sm backdrop-blur">
                   어르신 생활지원 제품 플랫폼
                 </p>
-                <h1 className="text-4xl font-black leading-tight text-[#17252A] md:text-5xl lg:text-6xl">
+                <h1 className="text-4xl font-black leading-[1.14] text-[#17252A] md:text-5xl lg:text-[56px]">
                   어르신의 생활을 더 편안하게,
                   <br />
                   보이지 않는 안전까지 살피는 청하람
                 </h1>
-                <p className="mt-6 max-w-2xl text-lg leading-8 text-[#5B6B73] md:text-xl md:leading-9">
+                <p className="mt-6 max-w-xl text-base leading-8 text-[#5B6B73] md:text-lg md:leading-9">
                   청하람은 노인지원재단과 함께 어르신에게 필요한 제품을 발굴하고 생활지원, 안전관리,
                   제품후원을 연결하는 기업입니다.
                 </p>
-                <div className="mt-8 flex max-w-xl flex-col gap-3 sm:flex-row">
+                <div className="mt-8 flex max-w-md flex-col gap-3 sm:max-w-none sm:flex-row">
                   <ButtonLink href="/products">제품 보기</ButtonLink>
                   <ButtonLink href="/donation/apply" variant="secondary">
                     후원하기
@@ -71,14 +72,13 @@ export default async function Home() {
                   </ButtonLink>
                 </div>
               </div>
-              <div className="absolute inset-x-5 bottom-5 grid gap-3 sm:inset-x-8 sm:grid-cols-3 lg:inset-x-12 lg:bottom-10">
+              <div className="mt-8 flex flex-wrap gap-2">
                 {heroStats.map((item) => (
-                  <div key={item.title} className="rounded-lg border border-[#D9E7E8] bg-white/92 px-4 py-4 shadow-sm backdrop-blur">
-                    <span className={`mb-3 flex h-9 w-9 items-center justify-center rounded-lg ${item.tone}`}>
-                      <item.icon size={18} aria-hidden />
+                  <div key={item.title} className="inline-flex min-h-11 items-center gap-2 rounded-lg border border-[#D9E7E8] bg-white/86 px-3 py-2 text-sm font-bold text-[#24343A] shadow-sm backdrop-blur">
+                    <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${item.tone}`}>
+                      <item.icon size={15} aria-hidden />
                     </span>
-                    <p className="font-black text-[#17252A]">{item.title}</p>
-                    <p className="mt-1 text-sm font-bold text-[#5B6B73]">{item.text}</p>
+                    <span>{item.title}</span>
                   </div>
                 ))}
               </div>
