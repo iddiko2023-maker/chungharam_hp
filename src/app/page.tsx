@@ -35,53 +35,47 @@ export default async function Home() {
 
   return (
     <>
-      <section className="overflow-hidden border-b border-[#D9E7E8] bg-[#F3F7F8]">
-        <Container className="py-0">
-          <div className="relative left-1/2 w-screen -translate-x-1/2 overflow-hidden bg-[#F3F7F8]">
-            <Image
-              src="/images/hero-consultation.png"
-              alt="어르신 생활지원 상담 장면"
-              fill
-              priority
-              sizes="100vw"
-              className="object-cover"
-            />
-            <div className="absolute inset-0 bg-gradient-to-r from-white/96 via-white/90 to-white/72 md:to-white/34" aria-hidden />
-            <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB]/92 via-transparent to-transparent" aria-hidden />
-            <div className="relative mx-auto flex min-h-[560px] w-full max-w-7xl flex-col items-start justify-center px-4 py-14 sm:min-h-[600px] sm:px-6 md:min-h-[640px] md:py-20 lg:px-8">
-              <div className="max-w-2xl">
-                <p className="mb-5 inline-flex rounded-full bg-white/85 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
-                  어르신 생활지원 제품 플랫폼
-                </p>
-                <h1 className="text-4xl font-black leading-[1.14] text-[#17252A] md:text-5xl lg:text-[56px]">
-                  어르신의 생활을 더 편안하게,
-                  <br />
-                  보이지 않는 안전까지 살피는 청하람
-                </h1>
-                <p className="mt-6 max-w-xl text-base leading-8 text-[#5B6B73] md:text-lg md:leading-9">
-                  청하람은 노인지원재단과 함께 어르신에게 필요한 제품을 발굴하고 생활지원, 안전관리,
-                  제품후원을 연결하는 기업입니다.
-                </p>
-                <div className="mt-8 flex max-w-md flex-col gap-3 sm:max-w-none sm:flex-row">
-                  <ButtonLink href="/products">제품 보기</ButtonLink>
-                  <ButtonLink href="/donation/apply" variant="secondary">
-                    후원하기
-                  </ButtonLink>
-                  <ButtonLink href="/business" variant="outline">
-                    기관 납품 문의
-                  </ButtonLink>
+      <section className="relative isolate overflow-hidden border-b border-[#D9E7E8] bg-[#F3F7F8]">
+        <Image
+          src="/images/hero-consultation.png"
+          alt="어르신 생활지원 상담 장면"
+          fill
+          priority
+          sizes="100vw"
+          className="object-cover object-[68%_center] md:object-center"
+        />
+        <div className="absolute inset-0 bg-gradient-to-r from-white/98 via-white/94 to-white/84 md:from-white/96 md:via-white/86 md:to-white/24" aria-hidden />
+        <div className="absolute inset-0 bg-gradient-to-t from-[#F8FAFB]/95 via-[#F8FAFB]/16 to-transparent" aria-hidden />
+        <Container className="relative flex min-h-[calc(100svh-72px)] items-center py-12 sm:min-h-[620px] md:min-h-[650px] md:py-20">
+          <div className="max-w-[760px]">
+            <p className="mb-5 inline-flex rounded-full bg-white/85 px-4 py-2 text-sm font-bold tracking-tight text-[#0F6B78] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
+              어르신 생활지원 제품 플랫폼
+            </p>
+            <h1 className="max-w-[740px] text-[34px] font-black leading-[1.18] text-[#17252A] [word-break:keep-all] sm:text-4xl md:text-5xl lg:text-[54px]">
+              어르신의 생활을 더 편안하게, 보이지 않는 안전까지 살피는 청하람
+            </h1>
+            <p className="mt-6 max-w-xl text-base leading-8 text-[#5B6B73] md:text-lg md:leading-9">
+              청하람은 노인지원재단과 함께 어르신에게 필요한 제품을 발굴하고 생활지원, 안전관리,
+              제품후원을 연결하는 기업입니다.
+            </p>
+            <div className="mt-8 flex max-w-md flex-col gap-3 sm:max-w-none sm:flex-row">
+              <ButtonLink href="/products">제품 보기</ButtonLink>
+              <ButtonLink href="/donation/apply" variant="secondary">
+                후원하기
+              </ButtonLink>
+              <ButtonLink href="/business" variant="outline">
+                기관 납품 문의
+              </ButtonLink>
+            </div>
+            <div className="mt-8 flex flex-wrap gap-2">
+              {heroStats.map((item) => (
+                <div key={item.title} className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/82 px-3 py-2 text-sm font-bold text-[#24343A] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
+                  <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${item.tone}`}>
+                    <item.icon size={15} aria-hidden />
+                  </span>
+                  <span>{item.title}</span>
                 </div>
-              </div>
-              <div className="mt-8 flex flex-wrap gap-2">
-                {heroStats.map((item) => (
-                  <div key={item.title} className="inline-flex min-h-11 items-center gap-2 rounded-full bg-white/82 px-3 py-2 text-sm font-bold text-[#24343A] ring-1 ring-[#D9E7E8]/70 backdrop-blur">
-                    <span className={`flex h-7 w-7 shrink-0 items-center justify-center rounded-md ${item.tone}`}>
-                      <item.icon size={15} aria-hidden />
-                    </span>
-                    <span>{item.title}</span>
-                  </div>
-                ))}
-              </div>
+              ))}
             </div>
           </div>
         </Container>
